@@ -1,0 +1,15 @@
+######################################################################
+#BEGIN  Machine dependent Makefile fragment for i386
+######################################################################
+ 
+# Files to build with certain warnings turned off
+dis_tables.o_CFLAGS_ADD += -Wno-cast-qual
+fbt_x86.o_CFLAGS_ADD += -Wno-cast-qual
+
+# sha256 Files to build with -DSHA256_USE_ASSEMBLY=1
+sha2.o_CFLAGS_ADD += -DSHA256_USE_ASSEMBLY=1
+
+######################################################################
+#END    Machine dependent Makefile fragment for i386
+######################################################################
+
